@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpikePlatform : MonoBehaviour
+public class SpikePlatform : PlatformParent
 {
 
     [SerializeField] private float spikeTime;

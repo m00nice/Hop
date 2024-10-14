@@ -11,9 +11,10 @@ public class MovingPlatform : MonoBehaviour
 
     private void Start()
     {
-        transform.DOMove(destination, duration)
+        transform.DOLocalMove(destination, duration)
             .SetEase(Ease.InOutQuad)
             .SetLoops(-1, LoopType.Yoyo);
+        
     }
 
     

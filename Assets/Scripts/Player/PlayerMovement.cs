@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.Port;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private float maxTime;
     [SerializeField] private GroundChecker groundChecker;
+    [SerializeField] private PlayerAnimation playerAnimation;
+    [SerializeField] private SoundManager soundManager;
     [SerializeField] private float rotSpeed;
     [SerializeField] private float movementSpeed;
     [SerializeField] private float swaySpeed;
@@ -53,15 +54,23 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         jumpTimer.Tick(Time.deltaTime);
+        if(groundChecker.IsGroundedPrime && playerAnimation.playerState != PlayerState.PREPJUMP)
+        {
+            playerAnimation.playerState = PlayerState.IDLE;
+        }
     }
 
     private void FixedUpdate()
     {
         JumpDirectionChange();
-        if (!groundChecker.CanWalk) return;
+        if(rb.velocity.y < -0.3) { playerAnimation.playerState = PlayerState.FALL;}
+        if (rb.velocity.y > 0.3) { playerAnimation.playerState = PlayerState.JUMP; }
+        if (!groundChecker.CanWalkPrime) return;
         WalkRight();
         WalkLeft();
     }
+
+
 
     private void JumpDirectionChange()
     {
@@ -74,17 +83,12 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, jumpDirection * 1f);
-    }
-
 
     void Jump()
     {
-        if (!groundChecker.IsGrounded) return;
+        if (!groundChecker.IsGroundedPrime) return;
         rb.AddForce(jumpDirection * jumpForce, ForceMode2D.Impulse);
+        soundManager.PlayJumpSound();
     }
     
 
@@ -93,6 +97,7 @@ public class PlayerMovement : MonoBehaviour
         if (performed)
         {
             jumpTimer.Start();
+            playerAnimation.playerState = PlayerState.PREPJUMP;
         }
         else if(!performed)
         {
@@ -152,4 +157,5 @@ public class PlayerMovement : MonoBehaviour
             
         }
     }
+
 }

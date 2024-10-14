@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class ExConPlatform : MonoBehaviour
+public class ExConPlatform : PlatformParent
 {
 
     [SerializeField] private Vector2 maxSize;
