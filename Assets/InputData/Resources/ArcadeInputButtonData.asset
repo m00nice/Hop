@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db319b1c61b48d469e13e5d8ecf5b0e, type: 3}
+  m_Name: ArcadeInputButtonData
+  m_EditorClassIdentifier: 
+  activeTesters:
+  - testers: 660100007a0100008e010000
+  - testers: 670100007b0100008f010000
+  - testers: 680100007c01000090010000
+  inputSetups:
+  - name: Up
+    arcadeInputType: 0
+    keyCodes:
+    - implemented: 1
+      externalKeyCode: 0
+      computerKeyCode: 119
+      inputManagerIdentifier: Vertical1
+    - implemented: 1
+      externalKeyCode: 0
+      computerKeyCode: 273
+      inputManagerIdentifier: Vertical2
+    - implemented: 1
+      externalKeyCode: 0
+      computerKeyCode: 116
+      inputManagerIdentifier: Vertical3
+  - name: Down
+    arcadeInputType: 1
+    keyCodes:
+    - implemented: 1
+      externalKeyCode: 0
+      computerKeyCode: 115
+      inputManagerIdentifier: Vertical1
+    - implemented: 1
+      externalKeyCode: 0
+      computerKeyCode: 274
+      inputManagerIdentifier: Vertical2
+    - implemented: 1
+      externalKeyCode: 0
+      computerKeyCode: 98
+      inputManagerIdentifier: Vertical3
+  - name: Left
+    arcadeInputType: 2
+    keyCodes:
+    - implemented: 1
+      externalKeyCode: 0
+      computerKeyCode: 97
+      inputManagerIdentifier: Horizontal1
+    - implemented: 1
+      externalKeyCode: 0
+      computerKeyCode: 276
+      inputManagerIdentifier: Horizontal2
+    - implemented: 1
+      externalKeyCode: 0
+      computerKeyCode: 102
+      inputManagerIdentifier: Horizontal3
+  - name: Right
+    arcadeInputType: 3
+    keyCodes:
+    - implemented: 1
+      externalKeyCode: 0
+      computerKeyCode: 100
+      inputManagerIdentifier: Horizontal1
+    - implemented: 1
+      externalKeyCode: 0
+      computerKeyCode: 275
+      inputManagerIdentifier: Horizontal2
+    - implemented: 1
+      externalKeyCode: 0
+      computerKeyCode: 104
+      inputManagerIdentifier: Horizontal3
+  - name: A
+    arcadeInputType: 4
+    keyCodes:
+    - implemented: 1
+      externalKeyCode: 350
+      computerKeyCode: 49
+      inputManagerIdentifier: Start1
+    - implemented: 1
+      externalKeyCode: 370
+      computerKeyCode: 257
+      inputManagerIdentifier: Start2
+    - implemented: 1
+      externalKeyCode: 390
+      computerKeyCode: 116
+      inputManagerIdentifier: 
+  - name: B
+    arcadeInputType: 5
+    keyCodes:
+    - implemented: 1
+      externalKeyCode: 351
+      computerKeyCode: 50
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 371
+      computerKeyCode: 258
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 391
+      computerKeyCode: 121
+      inputManagerIdentifier: 
+  - name: C
+    arcadeInputType: 6
+    keyCodes:
+    - implemented: 1
+      externalKeyCode: 352
+      computerKeyCode: 51
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 372
+      computerKeyCode: 259
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 392
+      computerKeyCode: 104
+      inputManagerIdentifier: 
+  - name: D
+    arcadeInputType: 7
+    keyCodes:
+    - implemented: 1
+      externalKeyCode: 353
+      computerKeyCode: 52
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 373
+      computerKeyCode: 260
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 393
+      computerKeyCode: 110
+      inputManagerIdentifier: 
+  - name: E
+    arcadeInputType: 8
+    keyCodes:
+    - implemented: 1
+      externalKeyCode: 354
+      computerKeyCode: 53
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 374
+      computerKeyCode: 261
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 394
+      computerKeyCode: 98
+      inputManagerIdentifier: 
+  - name: F
+    arcadeInputType: 9
+    keyCodes:
+    - implemented: 1
+      externalKeyCode: 355
+      computerKeyCode: 54
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 375
+      computerKeyCode: 262
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 395
+      computerKeyCode: 118
+      inputManagerIdentifier: 
+  - name: G
+    arcadeInputType: 10
+    keyCodes:
+    - implemented: 1
+      externalKeyCode: 356
+      computerKeyCode: 55
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 376
+      computerKeyCode: 263
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 396
+      computerKeyCode: 102
+      inputManagerIdentifier: 
+  - name: H
+    arcadeInputType: 11
+    keyCodes:
+    - implemented: 1
+      externalKeyCode: 357
+      computerKeyCode: 56
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 377
+      computerKeyCode: 264
+      inputManagerIdentifier: 
+    - implemented: 1
+      externalKeyCode: 397
+      computerKeyCode: 114
+      inputManagerIdentifier: 
+  - name: Start
+    arcadeInputType: 12
+    keyCodes:
+    - implemented: 1
+      externalKeyCode: 361
+      computerKeyCode: 32
+      inputManagerIdentifier: Start1
+    - implemented: 1
+      externalKeyCode: 381
+      computerKeyCode: 271
+      inputManagerIdentifier: Start2
+    - implemented: 1
+      externalKeyCode: 401
+      computerKeyCode: 103
+      inputManagerIdentifier: Start3

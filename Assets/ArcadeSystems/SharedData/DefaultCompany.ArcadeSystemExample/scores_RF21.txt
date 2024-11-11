@@ -1,0 +1,4 @@
+name:BCD;score:1E+10
+name:BBBBB;score:1E+09
+name:GGGGG;score:2.334446E+08
+name:HENRIK;score:2334

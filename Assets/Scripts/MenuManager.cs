@@ -58,7 +58,7 @@ public class MenuManager : MonoBehaviour
 
     private void ExitPressed()
     {
-
+        Application.Quit();
     }
 
 }

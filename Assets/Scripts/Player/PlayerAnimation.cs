@@ -32,7 +32,6 @@ public class PlayerAnimation : MonoBehaviour
         {
             spriteRenderer.sprite = idle0;
             animator.runtimeAnimatorController = idleAnimation;
-            Debug.Log("idle");
             return;
         }
 
@@ -40,7 +39,6 @@ public class PlayerAnimation : MonoBehaviour
         {
             spriteRenderer.sprite = prepJump0;
             animator.runtimeAnimatorController = prepJumpAnimation;
-            Debug.Log("prep");
             return;
         }
 
@@ -48,7 +46,6 @@ public class PlayerAnimation : MonoBehaviour
         {
             spriteRenderer.sprite = jump;
             animator.runtimeAnimatorController = null;
-            Debug.Log("jump");
             return;
         }
 
@@ -56,7 +53,6 @@ public class PlayerAnimation : MonoBehaviour
         {
             spriteRenderer.sprite = fall;
             animator.runtimeAnimatorController = null;
-            Debug.Log("fall");
             return;
         }
     }

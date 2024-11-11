@@ -14,6 +14,15 @@ public class GameManager : MonoBehaviour
     }
 
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            StartCoroutine(ExitGame());
+        }
+    }
+
+
     void GeneratePlatformGroups()
     {
         foreach (GameObject stage in randomStages)
@@ -21,6 +30,16 @@ public class GameManager : MonoBehaviour
             int rando = Random.Range(0, platformGroups.Count);
             Instantiate(platformGroups[rando], stage.transform, false);
             platformGroups.Remove(platformGroups[rando]);
+        }
+    }
+
+
+    private IEnumerator ExitGame()
+    {
+        yield return new WaitForSeconds(3f);
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
         }
     }
 

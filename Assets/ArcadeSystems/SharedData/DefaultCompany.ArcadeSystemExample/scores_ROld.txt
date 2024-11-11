@@ -1,0 +1,10 @@
+name:EEEJ;score:4555678
+name:CDE;score:45556
+name:GGGN;score:45333
+name:HV;score:9987
+name:CCCCD;score:6778
+name:CCC;score:4455
+name:WWW;score:4332
+name:TTTT;score:2333
+name:AAF;score:2212
+name:FM;score:453
